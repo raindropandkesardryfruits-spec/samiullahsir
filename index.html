@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>AetherFall</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+
+<body>
+    <nav>
+        <ul class="sidebar">
+            <li onclick="hidesidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
+                        viewBox="0 -960 960 960" width="24px" fill="#1f1f1f">
+                        <path
+                            d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                    </svg></a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="">products</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <ul>
+            <li><a href=""><img class="samiullah-logo" src="./icons/logooo.png"></a></li>
+            <li class="hideOnMobile"><a href="">Home</a></li>
+            <li class="hideOnMobile"><a href="about.html">About</a></li>
+            <li class="hideOnMobile"><a href="">products</a></li>
+            <li class="hideOnMobile"><a href="contact.html">Contact</a></li>
+            <li class="menu-button" onclick="showsidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg"
+                        height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f">
+                        <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                    </svg></a></li>
+        </ul>
+    </nav>
+
+
+
+
+<div class="slider">
+  <img src="./images/main.jpg" class="slide-img active" alt="Main Image 1">
+  <img src="./images/main2.jpg" class="slide-img" alt="Main Image 2">
+  <div class="slider-overlay"></div>
+  <div class="slider-caption-wrapper">
+    <div class="slider-caption" id="slider-caption">Nature’s Bounty, Packed for You</div>
+    <div class="slider-subcaption" id="slider-subcaption">Premium Dry Fruits from Kashmir</div>
+  </div>
+</div>
+
+
+
+
+
+
+    <!-- <div class="imgs">
+        <img class="first-img" src="./images/main.jpg">
+        <img class="first-img" src="/images/main2.jpg">
+    </div> -->
+
+<!-- ...existing content... -->
+<div  class="super-div">
+
+  <div class="product-row">
+
+    <a href="product.html?product=almonds">
+
+
+    <div  class="product-card">
+      <img class="pro-img" src="./products/DFH190_0.jpg" alt="Almonds">
+      <p class="product-name">Almonds</p>
+      <p class="product-prize">₹100</p>
+      <p>Per Gram</p>
+    </div>
+</a>
+
+
+    <div class="product-card">
+      <img class="pro-img" src="./products/DFHASJ1_0.jpg" alt="Cashews">
+      <p class="product-name">Cashews</p>
+      <p class="product-prize">₹120</p>
+      <p>Per Gram</p>
+    </div>
+    <div class="product-card">
+      <img class="pro-img" src="./products/DRY126_0.jpg" alt="Pistachios">
+      <p class="product-name">Pistachios</p>
+      <p class="product-prize">₹90</p>
+      <p>Per Gram</p>
+    </div>
+   <div class="product-card">
+  <img class="pro-img" src="./products/DRYF102_0.jpg" alt="Raisins">
+  <p class="product-name">Raisins</p>
+  <p class="product-prize">₹85</p>
+  <p>Per Gram</p>
+</div>
+  </div>
+
+  <div class="product-row">
+   <div class="product-card">
+  <img class="pro-img" src="./products/DRYF103_0.jpg" alt="Almonds Premium">
+  <p class="product-name">Almonds Premium</p>
+  <p class="product-prize">₹110</p>
+  <p>Per Gram</p>
+</div>
+    <div class="product-card">
+      <img class="pro-img" src="./products/DRYF110_0.jpg" alt="Cashews">
+      <p class="product-name">Cashews Large</p>
+      <p class="product-prize">₹125</p>
+      <p>Per Gram</p>
+    </div>
+   <div class="product-card">
+  <img class="pro-img" src="./products/DRYF110_0.jpg" alt="Cashews Jumbo">
+
+  <p class="product-name">Cashews Jumbo</p>
+  <p class="product-prize">₹130</p>
+  <p>Per Gram</p>
+</div>
+    <div class="product-card">
+      <img class="pro-img" src="./products/DRYF114_0.jpg" alt="Pistachios">
+      <p class="product-name">Salted Pistachios</p>
+      <p class="product-prize">₹140</p>
+      <p>Per Gram</p>
+    </div>
+  </div>
+
+  <div class="product-row">
+    <div class="product-card">
+      <img class="pro-img" src="./products/DRYF115_0_0.jpg" alt="Black Raisins">
+      <p class="product-name">Black Raisins</p>
+      <p class="product-prize">₹80</p>
+      <p>Per Gram</p>
+    </div>
+    <div class="product-card">
+      <img class="pro-img" src="./products/DRYF115_0.jpg" alt="Green Pistachios">
+      <p class="product-name">Green Pistachios</p>
+      <p class="product-prize">₹95</p>
+      <p>Per Gram</p>
+    </div>
+    <div class="product-card">
+      <img class="pro-img" src="./products/DRYF117_0.jpg" alt="Cardamom">
+      <p class="product-name">Cardamom</p>
+      <p class="product-prize">₹180</p>
+      <p>Per Gram</p>
+    </div>
+    <div class="product-card">
+      <img class="pro-img" src="./products/DRYF118_0.jpg" alt="Mango Slices">
+      <p class="product-name">Mango Slices</p>
+      <p class="product-prize">₹70</p>
+      <p>Per Gram</p>
+    </div>
+  </div>
+
+  <div class="product-row">
+    <div class="product-card">
+      <img class="pro-img" src="./products/DRYF119_0.jpg" alt="Roasted Almonds">
+      <p class="product-name">Roasted Almonds</p>
+      <p class="product-prize">₹115</p>
+      <p>Per Gram</p>
+    </div>
+    <div class="product-card">
+      <img class="pro-img" src="./products/DRYF120_0.jpg" alt="Walnuts">
+      <p class="product-name">Walnuts</p>
+      <p class="product-prize">₹150</p>
+      <p>Per Gram</p>
+    </div>
+    <div class="product-card">
+      <img class="pro-img" src="./products/DRYF123_0.jpg" alt="Mix Fruit Cubes">
+      <p class="product-name">Mix Fruit Cubes</p>
+      <p class="product-prize">₹65</p>
+      <p>Per Gram</p>
+    </div>
+    <div class="product-card">
+      <img class="pro-img" src="./products/DRYF127_0.jpg" alt="Dried Mango">
+      <p class="product-name">Dried Mango</p>
+      <p class="product-prize">₹75</p>
+      <p>Per Gram</p>
+    </div>
+  </div>
+
+  <div class="product-row">
+    <div class="product-card">
+      <img class="pro-img" src="./products/DRYF129_0.jpg" alt="Dried Kiwi">
+      <p class="product-name">Dried Kiwi</p>
+      <p class="product-prize">₹95</p>
+      <p>Per Gram</p>
+    </div>
+    <div class="product-card">
+      <img class="pro-img" src="./products/DRYF130_0.jpg" alt="Pine Nuts">
+      <p class="product-name">Pine Nuts</p>
+      <p class="product-prize">₹190</p>
+      <p>Per Gram</p>
+    </div>
+    <div class="product-card">
+      <img class="pro-img" src="./products/DRYF131_0_0.jpg" alt="Apricots">
+      <p class="product-name">Apricots</p>
+      <p class="product-prize">₹70</p>
+      <p>Per Gram</p>
+    </div>
+    <div class="product-card">
+      <img class="pro-img" src="./products/DRYF131_0.jpg" alt="Apricots Premium">
+      <p class="product-name">Apricots Premium</p>
+      <p class="product-prize">₹85</p>
+      <p>Per Gram</p>
+    </div>
+  </div>
+
+  <div class="product-row">
+    <div class="product-card">
+      <img class="pro-img" src="./products/DRYF132_0.jpg" alt="Dried Coconut">
+      <p class="product-name">Dried Coconut</p>
+      <p class="product-prize">₹60</p>
+      <p>Per Gram</p>
+    </div>
+    <div class="product-card">
+      <img class="pro-img" src="./products/DRYF134_0.jpg" alt="Roasted Makhana">
+      <p class="product-name">Roasted Makhana</p>
+      <p class="product-prize">₹55</p>
+      <p>Per Gram</p>
+    </div>
+    <div class="product-card">
+      <img class="pro-img" src="./products/DRYF135_0.jpg" alt="Brazil Nuts">
+      <p class="product-name">Brazil Nuts</p>
+      <p class="product-prize">₹210</p>
+      <p>Per Gram</p>
+    </div>
+    <div class="product-card">
+      <img class="pro-img" src="./products/DRYF136_0.jpg" alt="Pecan Nuts">
+      <p class="product-name">Pecan Nuts</p>
+      <p class="product-prize">₹200</p>
+      <p>Per Gram</p>
+    </div>
+  </div>
+
+  <div class="product-row">
+    <div class="product-card">
+      <img class="pro-img" src="./products/SKUDF10M1_0.jpg" alt="Macadamia">
+      <p class="product-name">Macadamia Nuts</p>
+      <p class="product-prize">₹220</p>
+      <p>Per Gram</p>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+<section class="delivery-section">
+  <h1>Why Shop With Us?</h1>
+  <div class="delivery-grid">
+    <div class="delivery-item">
+      <h3>PREMIUM QUALITY</h3>
+      <p>100% Quality Guarantee</p>
+    </div>
+    <div class="delivery-item">
+      <h3>SWIFT SHIPPING</h3>
+      <p>Delivering across India</p>
+    </div>
+    <div class="delivery-item">
+      <h3>EASY RETURN</h3>
+      <p>Refer return policy</p>
+    </div>
+    <div class="delivery-item">
+      <h3>24/7 SUPPORT</h3>
+      <p>Support every time</p>
+    </div>
+    <div class="delivery-item">
+      <h3>TRUSTED BRAND</h3>
+      <p>Thousands of happy customers</p>
+    </div>
+    <div class="delivery-item">
+      <h3>SECURE PAYMENTS</h3>
+      <p>100% safe and encrypted</p>
+    </div>
+  </div>
+</section>  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<footer class="main-footer">
+  <div class="footer-container">
+    <div class="footer-brand">
+      <h2>AetherFall</h2>
+      <p>Premium dry fruits sourced from the heart of Kashmir.</p>
+    </div>
+
+    <div class="footer-links">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Products</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-contact">
+      <h3>Contact Info</h3>
+      <p><strong>Owner:</strong> Sami Ullah Akbar</p>
+      <p><strong>Address:</strong> <a href="https://maps.app.goo.gl/zTm2o4fPwN5fawXK9?g_st=ac" target="_blank">Gotapora, Budgam, Kashmir</a></p>
+      <p><strong>Phone:</strong> <a href="tel:+917006847044">+91 7006847044</a></p>
+      <p><strong>Email:</strong> <a href="mailto:sprtualsami@gmail.com">sprtualsami@gmail.com</a></p>
+    </div>
+
+    <div class="footer-social">
+  <h3>Contact With Us</h3>
+  <div class="social-icons">
+    <a href="https://www.facebook.com/sami.ullah.939116" target="_blank" title="Facebook">
+      <i class="fab fa-facebook-f"></i>
+    </a>
+    <a href="https://api.whatsapp.com/send/?phone=917006847044&text&type=phone_number&app_absent=0" target="_blank" title="WhatsApp">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+    <a href="https://www.instagram.com/samiullah9052?igsh=Nmhyd3F1Ymxha3A4" target="_blank" title="Instagram">
+      <i class="fab fa-instagram"></i>
+    </a>
+  </div>
+</div>
+
+    </div>
+  </div>
+  <hr>
+  <p class="footer-bottom">© 2025 AetherFall | Made with ❤️ in Kashmir</p>
+</footer>
+
+
+
+
+<script src="product.js"></script>
+
+    <script src='script.js'></script>
+</body>
+
+</html>

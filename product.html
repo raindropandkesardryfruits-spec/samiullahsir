@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AetherFall | Product Details</title>
+  <link rel="stylesheet" href="style.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+  />
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav>
+    <ul class="sidebar">
+      <li onclick="hidesidebar()">
+        <a href="#">
+          <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f">
+            <path
+              d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+          </svg>
+        </a>
+      </li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="products.html">Products</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+
+    <ul>
+      <li><a href="#"><img class="samiullah-logo" src="./icons/logooo.png" /></a></li>
+      <li class="hideOnMobile"><a href="index.html">Home</a></li>
+      <li class="hideOnMobile"><a href="about.html">About</a></li>
+      <li class="hideOnMobile"><a href="products.html">Products</a></li>
+      <li class="hideOnMobile"><a href="contact.html">Contact</a></li>
+      <li class="menu-button" onclick="showsidebar()">
+        <a href="#">
+          <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f">
+            <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+          </svg>
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- Product details will be injected here by JS -->
+
+
+ <main class="product-detail">
+    <div class="container">
+      <div id="product-container">
+        <!-- Product details will be loaded here -->
+      </div>
+    </div>
+  </main>
+
+
+
+
+
+
+
+  <!-- Footer -->
+  <footer class="main-footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <h2>AetherFall</h2>
+        <p>Premium dry fruits sourced from the heart of Kashmir.</p>
+      </div>
+
+      <div class="footer-links">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-contact">
+        <h3>Contact Info</h3>
+        <p><strong>Owner:</strong> Sami Ullah Akbar</p>
+        <p><strong>Address:</strong>
+          <a href="https://maps.app.goo.gl/zTm2o4fPwN5fawXK9?g_st=ac" target="_blank">
+            Gotapora, Budgam, Kashmir
+          </a>
+        </p>
+        <p><strong>Phone:</strong> <a href="tel:+917006847044">+91 7006847044</a></p>
+        <p><strong>Email:</strong> <a href="mailto:sprtualsami@gmail.com">sprtualsami@gmail.com</a></p>
+      </div>
+
+      <div class="footer-social">
+        <h3>Contact With Us</h3>
+        <div class="social-icons">
+          <a href="https://www.facebook.com/sami.ullah.939116" target="_blank" title="Facebook">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="https://api.whatsapp.com/send/?phone=917006847044&text&type=phone_number&app_absent=0" target="_blank" title="WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+          </a>
+          <a href="https://www.instagram.com/samiullah9052?igsh=Nmhyd3F1Ymxha3A4" target="_blank" title="Instagram">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <hr />
+    <p class="footer-bottom">© 2025 AetherFall | Made with ❤️ in Kashmir</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+  <script src="product.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>AetherFall</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+  <link rel='stylesheet' type='text/css' media='screen' href='contact.css'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+  <nav>
+    <ul class="sidebar">
+      <li onclick="hidesidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
+            viewBox="0 -960 960 960" width="24px" fill="#1f1f1f">
+            <path
+              d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+          </svg></a></li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="#">Products</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <ul>
+      <li><a href="#"><img class="samiullah-logo" src="./icons/logooo.png"></a></li>
+      <li class="hideOnMobile"><a href="index.html">Home</a></li>
+      <li class="hideOnMobile"><a href="about.html">About</a></li>
+      <li class="hideOnMobile"><a href="#">Products</a></li>
+      <li class="hideOnMobile"><a href="contact.html">Contact</a></li>
+      <li class="menu-button" onclick="showsidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
+              viewBox="0 -960 960 960" width="24px" fill="#1f1f1f">
+              <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+            </svg></a></li>
+    </ul>
+  </nav>
+<!-- GET IN TOUCH SECTION -->
+<section class="get-in-touch">
+  <div class="intro-text">
+    <h2>Get In Touch</h2>
+    <p>We are here to help our customers all over the world. We would be happy to assist you.<br>
+      So let us know what your queries are or what you are looking for — we will get back to you shortly.</p>
+  </div>
+
+  <div class="touch-flex">
+    <!-- Left: Contact Info -->
+    <div class="contact-info">
+      <h3>Contact Us</h3>
+      <p><strong>Reach us on call/whatsapp:</strong><br> <a href="tel:+917483600212">+91-7483600212</a></p>
+      <p><strong>Email Address:</strong><br> <a href="mailto:info@dryfruithouse.com">info@dryfruithouse.com</a></p>
+      <p><strong>Office Location:</strong><br> NR Tower, 17th Cross, Sector 4,<br> 19th Main Road, HSR Layout,<br> Bengaluru, Karnataka 560102</p>
+
+      <div class="social-icons">
+        <strong>Follow Us:</strong><br>
+        <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="#" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+      </div>
+    </div>
+
+    <!-- Right: Contact Form -->
+    <form class="contact-form" action="mailto:info@dryfruithouse.com" method="POST" enctype="text/plain">
+      <div class="form-group">
+        <input type="text" name="name" placeholder="Your Name *" required>
+        <input type="tel" name="mobile" placeholder="Mobile No *" required>
+      </div>
+      <div class="form-group">
+        <input type="email" name="email" placeholder="Email ID *" required>
+        <input type="text" name="subject" placeholder="Subject">
+      </div>
+      <textarea name="message" rows="5" placeholder="Write Your Message..." required></textarea>
+      <button type="submit">Send Now</button>
+    </form>
+  </div>
+</section>
+
+
+  <!-- FEATURES SECTION -->
+  <section class="features-section">
+    <div class="feature">
+      <i class="fas fa-truck-fast"></i>
+      <h4>Fast Delivery</h4>
+      <p>Speedy doorstep delivery across India.</p>
+    </div>
+    <div class="feature">
+      <i class="fas fa-rotate-left"></i>
+      <h4>Easy Returns</h4>
+      <p>7-day hassle-free return policy.</p>
+    </div>
+    <div class="feature">
+      <i class="fas fa-lock"></i>
+      <h4>Secure Payments</h4>
+      <p>100% safe & encrypted payment system.</p>
+    </div>
+    <div class="feature">
+      <i class="fas fa-star"></i>
+      <h4>Premium Quality</h4>
+      <p>Only the finest, handpicked dry fruits.</p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="main-footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <h2>AetherFall</h2>
+        <p>Premium dry fruits sourced from the heart of Kashmir.</p>
+      </div>
+
+      <div class="footer-links">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-contact">
+        <h3>Contact Info</h3>
+        <p><strong>Owner:</strong> Sami Ullah Akbar</p>
+        <p><strong>Address:</strong> <a href="https://maps.app.goo.gl/zTm2o4fPwN5fawXK9?g_st=ac"
+            target="_blank">Gotapora, Budgam, Kashmir</a></p>
+        <p><strong>Phone:</strong> <a href="tel:+917006847044">+91 7006847044</a></p>
+        <p><strong>Email:</strong> <a href="mailto:sprtualsami@gmail.com">sprtualsami@gmail.com</a></p>
+      </div>
+
+      <div class="footer-social">
+        <h3>Contact With Us</h3>
+        <div class="social-icons">
+          <a href="https://www.facebook.com/sami.ullah.939116" target="_blank" title="Facebook">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="https://api.whatsapp.com/send/?phone=917006847044&text&type=phone_number&app_absent=0"
+            target="_blank" title="WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+          </a>
+          <a href="https://www.instagram.com/samiullah9052?igsh=Nmhyd3F1Ymxha3A4" target="_blank" title="Instagram">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <p class="footer-bottom">© 2025 AetherFall | Made with ❤️ in Kashmir</p>
+  </footer>
+
+  <script src='script.js'></script>
+</body>
+
+</html>
