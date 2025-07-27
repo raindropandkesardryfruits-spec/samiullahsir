@@ -48,3 +48,36 @@ function loadProduct() {
 }
 
 document.addEventListener("DOMContentLoaded", loadProduct);
+
+
+
+const productsData = {
+  "sunflower seeds": {
+    name: "Sunflower Seeds",
+    baseImage: "./products/sunflower.jpg",
+    description: "Sunflower seeds are nutrient-packed snacks...",
+    benefits: ["Healthy Heart", "High Nutrition", "Gluten Free", "Cholesterol Free"],
+    sku: "DFhSD105",
+    prices: {
+      "100": 68,
+      "250": 160,
+      "500": 300
+    }
+  },
+  // Add all other products here
+};
+
+
+
+const weightSelect = document.getElementById("weightSelect");
+const priceDisplay = document.getElementById("productPrice");
+
+weightSelect.addEventListener("change", () => {
+  const selectedWeight = weightSelect.value;
+  const product = productsData[productId]; // Assume you've got productId from URL already
+
+  if (product && product.prices[selectedWeight]) {
+    priceDisplay.textContent = `₹${product.prices[selectedWeight]}.00`;
+  }
+});
+

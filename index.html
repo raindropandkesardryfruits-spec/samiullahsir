@@ -26,7 +26,7 @@
         </ul>
         <ul>
             <li><a href=""><img class="samiullah-logo" src="./icons/logooo.png"></a></li>
-            <li class="hideOnMobile"><a href="">Home</a></li>
+            <li class="hideOnMobile"><a href="index.html">Home</a></li>
             <li class="hideOnMobile"><a href="about.html">About</a></li>
             <li class="hideOnMobile"><a href="">products</a></li>
             <li class="hideOnMobile"><a href="contact.html">Contact</a></li>
@@ -52,6 +52,14 @@
 
 
 
+<!-- Search Bar -->
+<div class="search-wrapper">
+  <input type="text" id="searchInput" placeholder="Search for dry fruits..." autocomplete="off" />
+  <button id="searchButton">Search</button>
+  <ul id="suggestions" class="suggestions-list"></ul>
+</div>
+
+
 
 
 
@@ -61,6 +69,14 @@
     </div> -->
 
 <!-- ...existing content... -->
+
+
+
+
+
+
+
+ <div id="product-list" class="product-grid">
 <div  class="super-div">
 
   <div class="product-row">
@@ -69,7 +85,7 @@
 
 
     <div  class="product-card">
-      <img class="pro-img" src="./products/DFH190_0.jpg" alt="Almonds">
+      <img class="pro-img" src="./products/almond.jpg" alt="Almonds">
       <p class="product-name">Almonds</p>
       <p class="product-prize">₹100</p>
       <p>Per Gram</p>
@@ -78,20 +94,20 @@
 
 
     <div class="product-card">
-      <img class="pro-img" src="./products/DFHASJ1_0.jpg" alt="Cashews">
-      <p class="product-name">Cashews</p>
+      <img class="pro-img" src="./products/Anjeer.jpg" alt="Cashews">
+      <p class="product-name">Anjeer (Figs)</p>
       <p class="product-prize">₹120</p>
       <p>Per Gram</p>
     </div>
     <div class="product-card">
       <img class="pro-img" src="./products/DRY126_0.jpg" alt="Pistachios">
-      <p class="product-name">Pistachios</p>
+      <p class="product-name">Mix Dry fruits</p>
       <p class="product-prize">₹90</p>
       <p>Per Gram</p>
     </div>
    <div class="product-card">
-  <img class="pro-img" src="./products/DRYF102_0.jpg" alt="Raisins">
-  <p class="product-name">Raisins</p>
+  <img class="pro-img" src="./products/raisen.jpg" alt="Raisins">
+  <p class="product-name">kishmish Raisins</p>
   <p class="product-prize">₹85</p>
   <p>Per Gram</p>
 </div>
@@ -99,27 +115,27 @@
 
   <div class="product-row">
    <div class="product-card">
-  <img class="pro-img" src="./products/DRYF103_0.jpg" alt="Almonds Premium">
-  <p class="product-name">Almonds Premium</p>
+  <img class="pro-img" src="./products/blackraisen.jpg" alt="Almonds Premium">
+  <p class="product-name">Black Raisins</p>
   <p class="product-prize">₹110</p>
   <p>Per Gram</p>
 </div>
     <div class="product-card">
-      <img class="pro-img" src="./products/DRYF110_0.jpg" alt="Cashews">
-      <p class="product-name">Cashews Large</p>
+      <img class="pro-img" src="./products/khajoor.png.jpeg" alt="Cashews">
+      <p class="product-name">khajoor medjool</p>
       <p class="product-prize">₹125</p>
       <p>Per Gram</p>
     </div>
    <div class="product-card">
-  <img class="pro-img" src="./products/DRYF110_0.jpg" alt="Cashews Jumbo">
+  <img class="pro-img" src="./products/pista.jpg" alt="Cashews Jumbo">
 
-  <p class="product-name">Cashews Jumbo</p>
+  <p class="product-name">Top-Quality Pista</p>
   <p class="product-prize">₹130</p>
   <p>Per Gram</p>
 </div>
     <div class="product-card">
-      <img class="pro-img" src="./products/DRYF114_0.jpg" alt="Pistachios">
-      <p class="product-name">Salted Pistachios</p>
+      <img class="pro-img" src="./products/walnut1.jpeg" alt="Pistachios">
+      <p class="product-name">akhrot giri kernels walnut</p>
       <p class="product-prize">₹140</p>
       <p>Per Gram</p>
     </div>
@@ -127,26 +143,26 @@
 
   <div class="product-row">
     <div class="product-card">
-      <img class="pro-img" src="./products/DRYF115_0_0.jpg" alt="Black Raisins">
-      <p class="product-name">Black Raisins</p>
+      <img class="pro-img" src="./products/Khubani1.jpeg" alt="Black Raisins">
+      <p class="product-name">Khubani (Apricot)</p>
       <p class="product-prize">₹80</p>
       <p>Per Gram</p>
     </div>
     <div class="product-card">
-      <img class="pro-img" src="./products/DRYF115_0.jpg" alt="Green Pistachios">
-      <p class="product-name">Green Pistachios</p>
+      <img class="pro-img" src="./products/Blueberry.png.jpeg" alt="Green Pistachios">
+      <p class="product-name">Blue berrys</p>
       <p class="product-prize">₹95</p>
       <p>Per Gram</p>
     </div>
     <div class="product-card">
-      <img class="pro-img" src="./products/DRYF117_0.jpg" alt="Cardamom">
-      <p class="product-name">Cardamom</p>
+      <img class="pro-img" src="./products/blackberry.png.jpeg" alt="Cardamom">
+      <p class="product-name">Black berrys</p>
       <p class="product-prize">₹180</p>
       <p>Per Gram</p>
     </div>
     <div class="product-card">
-      <img class="pro-img" src="./products/DRYF118_0.jpg" alt="Mango Slices">
-      <p class="product-name">Mango Slices</p>
+      <img class="pro-img" src="./products/ Cranberries.png.jpeg" alt="Mango Slices">
+      <p class="product-name"> Cran berries</p>
       <p class="product-prize">₹70</p>
       <p>Per Gram</p>
     </div>
@@ -154,26 +170,26 @@
 
   <div class="product-row">
     <div class="product-card">
-      <img class="pro-img" src="./products/DRYF119_0.jpg" alt="Roasted Almonds">
-      <p class="product-name">Roasted Almonds</p>
+      <img class="pro-img" src="./products/roseberry.png.jpeg" alt="Roasted Almonds">
+      <p class="product-name" >Roes berries</p>
       <p class="product-prize">₹115</p>
       <p>Per Gram</p>
     </div>
     <div class="product-card">
-      <img class="pro-img" src="./products/DRYF120_0.jpg" alt="Walnuts">
-      <p class="product-name">Walnuts</p>
+      <img class="pro-img" src="./products/heing.jpg" alt="Walnuts">
+      <p class="product-name">heing</p>
       <p class="product-prize">₹150</p>
       <p>Per Gram</p>
     </div>
     <div class="product-card">
-      <img class="pro-img" src="./products/DRYF123_0.jpg" alt="Mix Fruit Cubes">
-      <p class="product-name">Mix Fruit Cubes</p>
+      <img class="pro-img" src="./products/chilgoza.jpg" alt="Mix Fruit Cubes">
+      <p class="product-name">chilgoza pine nuts</p>
       <p class="product-prize">₹65</p>
       <p>Per Gram</p>
     </div>
     <div class="product-card">
-      <img class="pro-img" src="./products/DRYF127_0.jpg" alt="Dried Mango">
-      <p class="product-name">Dried Mango</p>
+      <img class="pro-img" src="./products/kiwi.jpg" alt="Dried Mango">
+      <p class="product-name">Kiwi</p>
       <p class="product-prize">₹75</p>
       <p>Per Gram</p>
     </div>
@@ -187,8 +203,8 @@
       <p>Per Gram</p>
     </div>
     <div class="product-card">
-      <img class="pro-img" src="./products/DRYF130_0.jpg" alt="Pine Nuts">
-      <p class="product-name">Pine Nuts</p>
+      <img class="pro-img" src="./products/chilgoza.jpg" alt="Pine Nuts">
+      <p class="product-name">Chilgoza Pine Nuts</p>
       <p class="product-prize">₹190</p>
       <p>Per Gram</p>
     </div>
@@ -241,6 +257,7 @@
       <p>Per Gram</p>
     </div>
   </div>
+</div>
 </div>
 
 

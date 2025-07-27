@@ -62,3 +62,76 @@ function showsidebar() {
 
 
 
+
+
+
+
+
+
+
+
+
+
+const searchInput = document.getElementById('searchInput');
+const searchButton = document.getElementById('searchButton');
+const suggestionsList = document.getElementById('suggestions');
+const productCards = Array.from(document.querySelectorAll('.product-card'));
+
+// Extract product names and reference their card
+const productNames = productCards.map(card => ({
+  name: card.querySelector('.product-name').textContent.trim(),
+  card: card
+}));
+
+searchInput.addEventListener('input', () => {
+  const query = searchInput.value.toLowerCase();
+  suggestionsList.innerHTML = '';
+
+  if (!query) {
+    productCards.forEach(p => p.card.style.display = '');
+    return;
+  }
+
+  const matched = productNames.filter(p =>
+    p.name.toLowerCase().includes(query)
+  );
+
+  // Build suggestion list
+  matched.slice(0, 5).forEach(match => {
+    const li = document.createElement('li');
+    li.textContent = match.name;
+    li.addEventListener('click', () => {
+      searchInput.value = match.name;
+      suggestionsList.innerHTML = '';
+      performSearch(match.name.toLowerCase());
+    });
+    suggestionsList.appendChild(li);
+  });
+});
+
+// Handle actual search on button click
+searchButton.addEventListener('click', () => {
+  const query = searchInput.value.toLowerCase();
+  performSearch(query);
+  suggestionsList.innerHTML = '';
+});
+
+function performSearch(query) {
+  productNames.forEach(p => {
+    if (p.name.toLowerCase().includes(query)) {
+      p.card.style.display = '';
+    } else {
+      p.card.style.display = 'none';
+    }
+  });
+}
+
+
+
+
+
+
+
+
+
+

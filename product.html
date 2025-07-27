@@ -1,122 +1,372 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AetherFall | Product Details</title>
-  <link rel="stylesheet" href="style.css" />
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-  />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Product Details</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+   <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+  <style>
+    select {
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 2px solid var(--main-color);
+  background-color: white;
+  color: var(--main-color);
+  font-weight: 600;
+  outline: none;
+  transition: border 0.2s ease, box-shadow 0.2s ease;
+  appearance: none;
+  background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%204%205'%3E%3Cpath%20fill='%23600b0b'%20d='M2%200L0%202h4z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 1rem top 50%;
+  background-size: 10px 10px;
+  max-width: 250px;
+}
+
+select:focus {
+  border-color: #450808;
+  box-shadow: 0 0 0 3px rgba(96, 11, 11, 0.2);
+}
+
+    :root {
+      --main-color: #600b0b;
+      --accent-color: #f4e1c1;
+      --font: 'Poppins', sans-serif;
+    }
+
+    body {
+      font-family: var(--font);
+      margin: 0;
+      background: white;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      padding: 2rem;
+    }
+
+    .product-img {
+      flex: 1;
+      min-width: 300px;
+    }
+
+    .product-img img {
+      width: 100%;
+      border-radius: 1rem;
+    }
+
+    .product-details {
+      flex: 1;
+      min-width: 300px;
+    }
+
+    .product-details h1 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .price {
+      font-weight: bold;
+      font-size: 1.5rem;
+      color: var(--main-color);
+    }
+
+    select {
+      padding: 0.5rem;
+      font-size: 1rem;
+      margin-bottom: 1rem;
+      width: 100%;
+      max-width: 200px;
+    }
+
+    .delivery-note {
+      margin: 1rem 0;
+      color: var(--main-color);
+      font-weight: 600;
+    }
+
+    .features {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  justify-content: space-between;
+}
+
+.feature {
+  flex: 1 1 120px;
+  text-align: center;
+}
+
+.feature img {
+  height: 40px;
+}
+
+/* Mobile fix: single row with horizontal scroll */
+@media (max-width: 768px) {
+  .features {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    justify-content: flex-start;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x mandatory;
+  }
+
+  .feature {
+    min-width: 120px;
+    scroll-snap-align: start;
+  }
+}
+
+    
+
+  .buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin: 1.5rem 0;
+  flex-wrap: wrap;
+}
+
+.buttons button {
+  flex: 1;
+  padding: 0.75rem 1.2rem;
+  background: var(--main-color);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  max-width: 180px;
+}
+
+.buttons button:hover {
+  background: #450808;
+}
+
+@media (max-width: 768px) {
+  .buttons {
+    justify-content: space-between;
+  }
+
+  .buttons button {
+    flex: none;
+    width: 45%;
+  }
+}
+
+  </style>
 </head>
-
 <body>
-  <!-- Navigation -->
+
   <nav>
-    <ul class="sidebar">
-      <li onclick="hidesidebar()">
-        <a href="#">
-          <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f">
-            <path
-              d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
-          </svg>
-        </a>
-      </li>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="products.html">Products</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
+        <ul class="sidebar">
+            <li onclick="hidesidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
+                        viewBox="0 -960 960 960" width="24px" fill="#1f1f1f">
+                        <path
+                            d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                    </svg></a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="">products</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <ul>
+            <li><a href=""><img class="samiullah-logo" src="./icons/logooo.png"></a></li>
+            <li class="hideOnMobile"><a href="index.html">Home</a></li>
+            <li class="hideOnMobile"><a href="about.html">About</a></li>
+            <li class="hideOnMobile"><a href="">products</a></li>
+            <li class="hideOnMobile"><a href="contact.html">Contact</a></li>
+            <li class="menu-button" onclick="showsidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg"
+                        height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f">
+                        <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                    </svg></a></li>
+        </ul>
+    </nav>
 
-    <ul>
-      <li><a href="#"><img class="samiullah-logo" src="./icons/logooo.png" /></a></li>
-      <li class="hideOnMobile"><a href="index.html">Home</a></li>
-      <li class="hideOnMobile"><a href="about.html">About</a></li>
-      <li class="hideOnMobile"><a href="products.html">Products</a></li>
-      <li class="hideOnMobile"><a href="contact.html">Contact</a></li>
-      <li class="menu-button" onclick="showsidebar()">
-        <a href="#">
-          <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f">
-            <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
-          </svg>
-        </a>
-      </li>
-    </ul>
-  </nav>
+  <main class="container">
+    <div class="product-img">
+      <img id="productImage" src="" alt="Product Image" />
+    </div>
 
-  <!-- Product details will be injected here by JS -->
+    <div class="product-details">
+      <h1 id="productTitle">Product Title</h1>
+      <select id="weightSelect"></select>
+      <p class="price" id="productPrice">₹0.00</p>
+      <p class="delivery-note">Swift Delivery - Shipping Across India. Bringing the goodness of dry fruits to your doorstep, no matter where you are! <a href="#">(Chat with us)</a></p>
 
-
- <main class="product-detail">
-    <div class="container">
-      <div id="product-container">
-        <!-- Product details will be loaded here -->
+      <div class="features">
+        <div class="feature"><img src="./icons/healthy-heart.png" alt="Heart" /><p>Healthy Heart</p></div>
+        <div class="feature"><img src="./icons/high-protein.png" alt="Nutrition" /><p>High Nutrition</p></div>
+        <div class="feature"><img src="./icons/gulten-free.png" alt="Gluten Free" /><p>Gluten Free</p></div>
+        <div class="feature"><img src="./icons/calestrol-free.png" alt="Cholesterol Free" /><p>Cholesterol Free</p></div>
       </div>
+
+     <div class="buttons">
+  <button onclick="window.open('https://wa.me/917006847044','_blank')">WhatsApp Us</button>
+  <button onclick="window.location.href='tel:+917006847044'">Call Us</button>
+</div>
+
+
+      <p class="sku"><strong>SKU:</strong> <span id="productSku">N/A</span></p>
+      <p class="description"><strong>Description:</strong> <span id="productDesc">Loading...</span></p>
     </div>
   </main>
 
 
 
+ 
+<section class="delivery-section">
+  <h1>Why Shop With Us?</h1>
+  <div class="delivery-grid">
+    <div class="delivery-item">
+      <h3>PREMIUM QUALITY</h3>
+      <p>100% Quality Guarantee</p>
+    </div>
+    <div class="delivery-item">
+      <h3>SWIFT SHIPPING</h3>
+      <p>Delivering across India</p>
+    </div>
+    <div class="delivery-item">
+      <h3>EASY RETURN</h3>
+      <p>Refer return policy</p>
+    </div>
+    <div class="delivery-item">
+      <h3>24/7 SUPPORT</h3>
+      <p>Support every time</p>
+    </div>
+    <div class="delivery-item">
+      <h3>TRUSTED BRAND</h3>
+      <p>Thousands of happy customers</p>
+    </div>
+    <div class="delivery-item">
+      <h3>SECURE PAYMENTS</h3>
+      <p>100% safe and encrypted</p>
+    </div>
+  </div>
+</section>  
 
 
 
 
-  <!-- Footer -->
+
   <footer class="main-footer">
-    <div class="footer-container">
-      <div class="footer-brand">
-        <h2>AetherFall</h2>
-        <p>Premium dry fruits sourced from the heart of Kashmir.</p>
-      </div>
-
-      <div class="footer-links">
-        <h3>Quick Links</h3>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Products</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-contact">
-        <h3>Contact Info</h3>
-        <p><strong>Owner:</strong> Sami Ullah Akbar</p>
-        <p><strong>Address:</strong>
-          <a href="https://maps.app.goo.gl/zTm2o4fPwN5fawXK9?g_st=ac" target="_blank">
-            Gotapora, Budgam, Kashmir
-          </a>
-        </p>
-        <p><strong>Phone:</strong> <a href="tel:+917006847044">+91 7006847044</a></p>
-        <p><strong>Email:</strong> <a href="mailto:sprtualsami@gmail.com">sprtualsami@gmail.com</a></p>
-      </div>
-
-      <div class="footer-social">
-        <h3>Contact With Us</h3>
-        <div class="social-icons">
-          <a href="https://www.facebook.com/sami.ullah.939116" target="_blank" title="Facebook">
-            <i class="fab fa-facebook-f"></i>
-          </a>
-          <a href="https://api.whatsapp.com/send/?phone=917006847044&text&type=phone_number&app_absent=0" target="_blank" title="WhatsApp">
-            <i class="fab fa-whatsapp"></i>
-          </a>
-          <a href="https://www.instagram.com/samiullah9052?igsh=Nmhyd3F1Ymxha3A4" target="_blank" title="Instagram">
-            <i class="fab fa-instagram"></i>
-          </a>
-        </div>
-      </div>
+  <div class="footer-container">
+    <div class="footer-brand">
+      <h2>AetherFall</h2>
+      <p>Premium dry fruits sourced from the heart of Kashmir.</p>
     </div>
 
-    <hr />
-    <p class="footer-bottom">© 2025 AetherFall | Made with ❤️ in Kashmir</p>
-  </footer>
+    <div class="footer-links">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Products</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
 
-  <!-- Scripts -->
-  <script src="script.js"></script>
-  <script src="product.js"></script>
+    <div class="footer-contact">
+      <h3>Contact Info</h3>
+      <p><strong>Owner:</strong> Sami Ullah Akbar</p>
+      <p><strong>Address:</strong> <a href="https://maps.app.goo.gl/zTm2o4fPwN5fawXK9?g_st=ac" target="_blank">Gotapora, Budgam, Kashmir</a></p>
+      <p><strong>Phone:</strong> <a href="tel:+917006847044">+91 7006847044</a></p>
+      <p><strong>Email:</strong> <a href="mailto:sprtualsami@gmail.com">sprtualsami@gmail.com</a></p>
+    </div>
+
+    <div class="footer-social">
+  <h3>Contact With Us</h3>
+  <div class="social-icons">
+    <a href="https://www.facebook.com/sami.ullah.939116" target="_blank" title="Facebook">
+      <i class="fab fa-facebook-f"></i>
+    </a>
+    <a href="https://api.whatsapp.com/send/?phone=917006847044&text&type=phone_number&app_absent=0" target="_blank" title="WhatsApp">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+    <a href="https://www.instagram.com/samiullah9052?igsh=Nmhyd3F1Ymxha3A4" target="_blank" title="Instagram">
+      <i class="fab fa-instagram"></i>
+    </a>
+  </div>
+</div>
+
+    </div>
+  </div>
+  <hr>
+  <p class="footer-bottom">© 2025 AetherFall | Made with ❤️ in Kashmir</p>
+</footer>
+  <script>
+    const productsData = {
+      almonds: {
+        title: "Almonds",
+        image: "./products/almond.jpg",
+        sku: "DFH190",
+        description: "Premium quality almonds rich in protein, fiber, and healthy fats.",
+        prices: {
+          "100 gram": 100,
+          "250 gram": 250,
+          "500 gram": 480,
+          "1 kg": 900,
+        },
+      },
+      "sunflower-seeds": {
+        title: "Sunflower Seeds",
+        image: "./products/sunflower.jpg",
+        sku: "DFhSD105",
+        description: "Sunflower seeds are nutrient-packed snacks rich in healthy fats, protein, and antioxidants. They support heart health, boost immunity, and provide a natural source of energy, making them a perfect addition to salads, smoothies, or enjoyed on their own.",
+        prices: {
+          "100 gram": 68,
+          "250 gram": 170,
+          "500 gram": 330,
+          "1 kg": 650,
+        },
+      },
+      // Add more products here
+    };
+
+    const queryParams = new URLSearchParams(window.location.search);
+    const productId = queryParams.get("product");
+
+    const product = productsData[productId];
+
+    if (product) {
+      document.getElementById("productTitle").textContent = product.title;
+      document.getElementById("productImage").src = product.image;
+      document.getElementById("productSku").textContent = product.sku;
+      document.getElementById("productDesc").textContent = product.description;
+
+      const weightSelect = document.getElementById("weightSelect");
+      const priceElement = document.getElementById("productPrice");
+
+      for (let weight in product.prices) {
+        let option = document.createElement("option");
+        option.value = weight;
+        option.textContent = weight;
+        weightSelect.appendChild(option);
+      }
+
+      // Set default price
+      const firstWeight = Object.keys(product.prices)[0];
+      weightSelect.value = firstWeight;
+      priceElement.textContent = `₹${product.prices[firstWeight]}.00`;
+
+      weightSelect.addEventListener("change", (e) => {
+        const selectedWeight = e.target.value;
+        const price = product.prices[selectedWeight];
+        priceElement.textContent = `₹${price}.00`;
+      });
+    } else {
+      document.querySelector(".container").innerHTML = "<h2 style='padding:2rem;'>Product Not Found</h2>";
+    }
+  </script>
+    <script src='script.js'></script>
 </body>
-
 </html>
