@@ -109,6 +109,15 @@ searchInput.addEventListener('input', () => {
   });
 });
 
+// ✅ NEW: Search on pressing Enter inside input
+searchInput.addEventListener('keydown', (event) => {
+  if (event.key === 'Enter') {
+    const query = searchInput.value.toLowerCase();
+    performSearch(query);
+    suggestionsList.innerHTML = '';
+  }
+});
+
 // Handle actual search on button click
 searchButton.addEventListener('click', () => {
   const query = searchInput.value.toLowerCase();
@@ -117,14 +126,26 @@ searchButton.addEventListener('click', () => {
 });
 
 function performSearch(query) {
+  let found = false;
+
   productNames.forEach(p => {
     if (p.name.toLowerCase().includes(query)) {
       p.card.style.display = '';
+      found = true;
     } else {
       p.card.style.display = 'none';
     }
   });
+
+  const noResults = document.getElementById('noResults');
+  if (found) {
+    noResults.style.display = 'none';
+  } else {
+    noResults.style.display = 'block';
+  }
 }
+
+
 
 
 

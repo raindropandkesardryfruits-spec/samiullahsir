@@ -164,7 +164,7 @@ p{
 /* Optional: 1 column for very small screens */
 @media (max-width: 480px) {
     .product-row {
-        grid-template-columns: 1fr;
+         grid-template-columns: repeat(2, 1fr);
     }
 }
 
@@ -186,6 +186,93 @@ p{
     border-radius: 10px;
     object-fit: cover;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#product-list {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 16px;
+  padding: 20px;
+  max-width: 1400px;
+  margin: auto;
+}
+
+/* Product Card */
+.product-card {
+  background-color: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 12px;
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  text-decoration: none;
+  color: inherit;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.product-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+}
+
+.pro-img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+  aspect-ratio: 1 / 1;
+}
+
+.product-name {
+  font-weight: 600;
+  margin: 10px 0 4px;
+  font-size: 1rem;
+}
+
+.product-prize {
+  color: #388e3c;
+  font-weight: bold;
+  font-size: 0.95rem;
+  margin-bottom: 4px;
+}
+
+.product-card p:last-child {
+  font-size: 0.85rem;
+  color: #757575;
+}
+
+/* Tablets (768px – 1024px): 4 columns */
+@media (max-width: 1024px) {
+  #product-list {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* Mobiles (<768px): 2 columns */
+@media (max-width: 767px) {
+  #product-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
+
+
 
 /* ✅ Footer styles */
 /* .footer {
