@@ -176,14 +176,14 @@ select:focus {
                     </svg></a></li>
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
-            <li><a href="">products</a></li>
+            <li><a href="">Products</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
         <ul>
             <li><a href=""><img class="samiullah-logo" src="./icons/logooo.png"></a></li>
             <li class="hideOnMobile"><a href="index.html">Home</a></li>
             <li class="hideOnMobile"><a href="about.html">About</a></li>
-            <li class="hideOnMobile"><a href="">products</a></li>
+            <li class="hideOnMobile"><a href="">Products</a></li>
             <li class="hideOnMobile"><a href="contact.html">Contact</a></li>
             <li class="menu-button" onclick="showsidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg"
                         height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f">
@@ -216,7 +216,7 @@ select:focus {
 </div>
 
 
-      <p class="sku"><strong>SKU:</strong> <span id="productSku">N/A</span></p>
+      <p class="sku"><strong></strong> <span id="productSku"></span></p>
       <p class="description"><strong>Description:</strong> <span id="productDesc">Loading...</span></p>
     </div>
   </main>
@@ -268,10 +268,10 @@ select:focus {
     <div class="footer-links">
       <h3>Quick Links</h3>
       <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Products</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="product.html">Products</a></li>
+        <li><a href="contact.html">Contact</a></li>
       </ul>
     </div>
 
@@ -305,32 +305,536 @@ select:focus {
 </footer>
   <script>
     const productsData = {
-      almonds: {
-        title: "Almonds",
-        image: "./products/almond.jpg",
-        sku: "DFH190",
-        description: "Premium quality almonds rich in protein, fiber, and healthy fats.",
-        prices: {
-          "100 gram": 100,
-          "250 gram": 250,
-          "500 gram": 480,
-          "1 kg": 900,
-        },
-      },
-      "sunflower-seeds": {
-        title: "Sunflower Seeds",
-        image: "./products/sunflower.jpg",
-        sku: "DFhSD105",
-        description: "Sunflower seeds are nutrient-packed snacks rich in healthy fats, protein, and antioxidants. They support heart health, boost immunity, and provide a natural source of energy, making them a perfect addition to salads, smoothies, or enjoyed on their own.",
-        prices: {
-          "100 gram": 68,
-          "250 gram": 170,
-          "500 gram": 330,
-          "1 kg": 650,
-        },
-      },
-      // Add more products here
-    };
+  "himalayan-garlic": {
+    title: "Himalayan Garlic",
+    image: "./products/himalayan-garlic.jpg",
+    // sku: "DFH001",
+    description: "Natural Himalayan garlic known for its medicinal properties.",
+    prices: {
+      "150g": 150,
+      "300g": 300,
+      "400g": 400
+    }
+  },
+  "mamra": {
+    title: "Mamra Almonds",
+    image: "./products/mamra.jpg",
+    //sku: "DFH002",
+    description: "High-quality Mamra almonds rich in oil and nutrients.",
+    prices: {
+      "100g": 170,
+      "200g": 280,
+      "1kg": 530
+    }
+  },
+  "cashew": {
+    title: "Cashew",
+    image: "./products/cashew.jpg",
+   // sku: "DFH024",
+    description: "Premium quality cashew nuts.",
+    prices: {
+      "100g": 100,
+      "200g": 200,
+      "500g": 375
+    }
+  },
+  "almonds": {
+    title: "Badam (Almond)",
+    image: "./products/almond.jpg",
+    // sku: "DFH025",
+    description: "Nutritious almonds for a healthy lifestyle.",
+    prices: {
+      "100g": 100,
+      "200g": 200,
+      "1Kg": 970
+    }
+  },
+  "cashew": {
+    title: "cashew (Kaju)",
+    image: "./products/cashew.jpg",
+   // sku: "DFH025",
+    description: "Nutritious almonds for a healthy lifestyle.",
+    prices: {
+      "100g": 100,
+      "200g": 200,
+      "500g": 360
+    }
+  },
+  "anjeer": {
+    title: "Anjeer (Fig)",
+    image: "./products/anjeer.jpg",
+    //sku: "DFH026",
+    description: "Dried figs rich in fiber and minerals.",
+    prices: {
+      "100g": 145,
+      "200g": 290,
+      "1Kg": 1350
+    }
+  },
+  "mix": {
+    title: "Mix Dry Fruits",
+    image: "./products/mix.jpg",
+    //sku: "DFH027",
+    description: "A healthy mix of dry fruits.",
+    prices: {
+      "100g": 100,
+      "500g": 475,
+      "1Kg": 950
+    }
+  },
+  "raisins": {
+    title: "Kishmish (Green)",
+    image: "./products/raisen.jpg",
+    //sku: "DFH028",
+    description: "Sweet green kishmish (raisins).",
+    prices: {
+      "100g": 60,
+      "200g": 120,
+      "500g": 520
+    }
+  },
+  "blackraisins": {
+    title: "Black Kishmish",
+    image: "./products/blackraisen.jpg",
+   // sku: "DFH029",
+    description: "Delicious black kishmish.",
+    prices: {
+      "100g": 60,
+      "200g": 130,
+      "1Kg": 600
+    }
+  },
+  "methi-root": {
+    title: "Methi Root (Labjor)",
+    image: "./products/khajoor.png.jpeg",
+   // sku: "DFH030",
+    description: "Methi root known for medicinal properties.",
+    prices: {
+      "100g": 160,
+      "200g": 320,
+      "1Kg": 1500
+    }
+  },
+  "pista": {
+    title: "Top-Quality Pista",
+    image: "./products/pista.jpg",
+   // sku: "DFH030",
+    description: "Premium quality pistachios, rich in protein and fiber, perfect for healthy snacking, heart health, and delicious culinary use.",
+    prices: {
+      "100g": 125,
+      "200g": 250,
+      "1Kg": 1250
+    }
+  },
+  "kahwa": {
+    title: "Kashmiri Kahwa",
+    image: "./products/kahwa.png",
+   // sku: "DFH031",
+    description: "Traditional Kashmiri Kahwa, infused with saffron and spices, boosts metabolism, improves digestion, enhances mood, and offers soothing warmt",
+    prices: {
+      "per box": 325
+    }
+  },
+  "tikki": {
+    title: "Tikki",
+    image: "./products/tikki.png",
+    //sku: "DFH032",
+    description: "Crispy Masala Tikki, bursting with bold spices, perfect savory snack, satisfies cravings, enhances tea-time, and delivers authentic Indian flavor.",
+    prices: {
+      "per box": 350
+    }
+  },
+  "milkmasala": {
+    title: "Milk Tea Masala",
+    image: "./products/milkmasala.png",
+   // sku: "DFH033",
+    description: "Flavorful masala blend for milk tea.",
+    prices: {
+      "per box": 250
+    }
+  },
+  "Khubani": {
+    title: "Dried Apricot",
+    image: "./products/Khubani1.jpeg",
+   // sku: "DFH034",
+    description: "Sun-dried apricots rich in nutrients.",
+    prices: {
+      "100g": 130,
+      "200g": 250,
+      "1Kg": 1250
+    }
+  },
+    "apricot": {
+    title: " Apricot",
+    image: "./products/apricot.jpg",
+   // sku: "DFH034",
+    description: "Premium Apricots, naturally sweet and chewy, rich in vitamins and fiber, support eye health, improve digestion, and boost immunity.",
+    prices: {
+      "100g": 130,
+      "200g": 250,
+      "1Kg": 1250
+    }
+  },
+  "blueberry": {
+    title: "Blueberry",
+    image: "./products/Blueberry.png.jpeg",
+   // sku: "DFH035",
+    description: "Tangy and sweet dried blueberries.",
+    prices: {
+      "100g": 90,
+      "200g": 180,
+      "500g": 450
+    }
+  },
+  "blackberry": {
+    title: "Blackberry",
+    image: "./products/blackberry.png.jpeg",
+   // sku: "DFH036",
+    description: "Dried blackberries rich in antioxidants.",
+    prices: {
+      "100g": 85,
+      "200g": 170,
+      "500g": 425
+    }
+  },
+  "cranberry": {
+    title: "Cranberry",
+    image: "./products/Cranberries.png.jpeg",
+    //sku: "DFH037",
+    description: "Delicious dried cranberries.",
+    prices: {
+      "100g": 95,
+      "200g": 190,
+      "500g": 475
+    }
+  },
+  "roseberry": {
+    title: "Roseberry",
+    image: "./products/roseberry.png.jpeg",
+    //sku: "DFH038",
+    description: "Flavored roseberry bites.",
+    prices: {
+      "100g": 85,
+      "200g": 170,
+      "500g": 425
+    }
+  },
+  "heing": {
+    title: "Heing",
+    image: "./products/heing.png",
+    //sku: "DFH039",
+    description: "Rare dry fruit item - heing.",
+    prices: {
+      "per box": 350
+    }
+  },
+  "chilgoza": {
+    title: "Chilgoza",
+    image: "./products/chilgoza.jpg",
+   // sku: "DFH040",
+    description: "Expensive and delicious pine nuts (chilgoza).",
+    prices: {
+      "100g": 650,
+      "500g": 3000,
+      "1kg": 6000
+    }
+  },
+  "white-honey": {
+    title: "White Honey",
+    image: "./products/white-honey.jpg",
+    //sku: "DFH041",
+    description: "Pure and natural white honey.",
+    prices: {
+      "500g": 450,
+      "1kg": 850
+    }
+  },
+  "shilajit": {
+    title: "Shilajit",
+    image: "./products/shilajit.png",
+    //sku: "DFH042",
+    description: "Natural Shilajit with numerous health benefits.",
+    prices: {
+      "25g": 250,
+      "40g": 450,
+      "70g": 450
+    }
+  },
+  "saffron": {
+    title: "Saffron",
+    image: "./products/saffron.png",
+   // sku: "DFH043",
+    description: "Pure Kashmiri saffron.",
+    prices: {
+      "1g": 280
+    }
+  },
+  "applejam": {
+    title: "Apple Jam",
+    image: "./products/applejamm.png",
+    //sku: "DFH044",
+    description: "Delicious Apple Jam, made from fresh apples, naturally sweet, rich in fiber, perfect for breakfasts, desserts, and healthy snacking.",
+    prices: {
+      "per bottle": 350
+    }
+  },
+  "applev": {
+    title: "Apple Viniger",
+    image: "./products/appleviniger.png",
+    //sku: "DFH044",
+    description: "Organic apple cider vinegar.",
+    prices: {
+      "per bottle": 450
+    }
+  },
+  "kiwi": {
+    title: "Kiwi",
+    image: "./products/kiwi.jpg",
+   // sku: "DFH044",
+    description: "Premium dried kiwis, naturally sweet and tangy, rich in fiber and vitamin C, perfect for snacking and boosting immunity.",
+    prices: {
+      "per bottle": 350
+    }
+  },
+  "garlic": {
+    title: "Himalayan Garlic",
+    image: "./products/garlic.jpeg",
+   // sku: "DFH044",
+    description: "Himalayan garlic, known for medicinal benefits, boosts immunity, reduces cholesterol, fights infections, and supports heart and overall body health.",
+    prices: {
+      "100g": 150,
+      "200g": 300,
+      "1kg": 1400
+    }
+  },
+   "curvedmamra": {
+    title: "Curved Mamra (almond)",
+    image: "./products/curvedmarma.jpg",
+   // sku: "DFH044",
+    description: "Curved Mamra almonds, naturally shaped and nutrient-dense, packed with healthy fats, support energy, brain health, and daily nourishment.",
+    prices: {
+      "100g": 170,
+      "500g": 800
+    }
+  },
+   "mamra": {
+    title: "Mamra (almond)",
+    image: "./products/mamra almond.png",
+   // sku: "DFH044",
+    description: "Premium Mamra almonds, rich in natural oils, protein, and antioxidants, boost brain function, heart health, and overall vitality.",
+    prices: {
+      "100g": 140,
+      "200g": 280,
+      "1kg": 1300
+    }
+  },
+   "ghee": {
+    title: "Ghee",
+    image: "./products/Ghee.png",
+    //sku: "DFH044",
+    description: "Premium desi ghee, made from pure cow’s milk, rich in healthy fats, enhances immunity, digestion, and adds authentic flavor.",
+    prices: {
+      "500g": 450
+    }
+  },
+  "bfhoney": {
+    title: "Black Forest Honey",
+    image: "./products/bhoney.png",
+    //sku: "DFH044",
+    description: "Black Forest Honey, dark and rich in antioxidants, boosts immunity, aids digestion, and offers a deep, earthy natural sweetness.",
+    prices: {
+      "500g": 550
+    }
+  },
+  "munakka": {
+    title: "munakka",
+    image: "./products/munakka .png",
+    //sku: "DFH044",
+    description: "Premium Munakka, naturally sweet and rich in iron, aids digestion, boosts energy, improves immunity, and supports respiratory and heart health.",
+    prices: {
+      "500g": 425
+    }
+  },
+  "chilgozaGiri": {
+    title: "chilgoza Giri",
+    image: "./products/chilgozagiri.png",
+    //sku: "DFH040",
+    description: "Expensive and delicious pine nuts (chilgoza).",
+    prices: {
+      "500g": 4100,
+      "1kg": 9200
+    }
+  },
+    "achar": {
+    title: "Achar",
+    image: "./products/achar.png",
+    //sku: "DFH044",
+    description: "Traditional Indian Achar, rich in spices and flavor, enhances every meal, aids digestion, and brings a tangy, zesty kick.",
+    prices: {
+      "box": 350,
+    }
+  },
+    "hazelnut": {
+    title: "Hazel nut",
+    image: "./products/hazelnut.png",
+   // sku: "DFH044",
+    description: "Premium Hazelnuts, rich in healthy fats and antioxidants, support heart health, boost energy, and add crunch to snacks and desserts.",
+    prices: {
+      "500g": 1000,
+      "1kg": 2000
+    }
+  },
+    "moosli": {
+    title: "Moosli",
+    image: "./products/moosli.png",
+   // sku: "DFH044",
+    description: "Premium Musli, a natural herbal supplement, boosts stamina, enhances immunity, supports strength, vitality, and overall wellness in daily life.",
+    prices: {
+      "500g": 1000,
+      "1kg": 2000
+    }
+  },
+    "turkishanjeer": {
+    title: "Turkish Anjeer",
+    image: "./products/turanjeer.png",
+   // sku: "DFH026",
+    description: "Turkish Anjeer (figs), naturally sweet and fiber-rich, support digestion, strengthen bones, boost energy, and promote overall health and wellness.",
+    prices: {
+      "1Kg": 1450
+    }
+  },
+    "ajwa": {
+    title: "Ajwa",
+    image: "./products/ajwaa.png.jpeg",
+    //sku: "DFH026",
+    description: "Premium Ajwa Dates, soft and rich in nutrients, boost energy, support heart health, aid digestion, and hold prophetic significance.",
+    prices: {
+      "500g": 600,
+      "1Kg": 1200
+    }
+  },
+    "turkle": {
+    title: "Turkle Khusani",
+    image: "./products/anjeer.jpg",
+   // sku: "DFH026",
+    description: "Turkel Khusani (Turkish Apricots), naturally sweet and chewy, rich in fiber and vitamins, support eye health, digestion, and boost immunity.",
+    prices: {
+      "1Kg": 1250
+    }
+  },
+    "panjeeri": {
+    title: "Panjeeri",
+image: "./products/panjeeri.png",
+    //sku: "DFH026",
+    description: "Traditional Panjeeri, rich in ghee, nuts, and herbs, boosts energy, supports postpartum recovery, strengthens immunity, and promotes overall wellness.",
+    prices: {
+      "500g": 550,
+      "1Kg": 1050
+    }
+  },
+    "mamrashell": {
+    title: "Mamra shell",
+   // image: "./products/anjeer.jpg",
+    sku: "DFH026",
+    description: "Mamra Almonds with Shell, naturally protected, rich in nutrients and healthy fats, ensure purity, longer shelf life, and authentic taste.",
+    prices: {
+      "1Kg": 600
+    }
+  },
+    "levender": {
+    title: "Levender Oil",
+  //  image: "./products/anjeer.jpg",
+    sku: "DFH026",
+    description: "Lavender Oil, soothing and aromatic, promotes relaxation, reduces stress, improves sleep quality, and nourishes skin with natural antibacterial properties.",
+    prices: {
+      "Bottle": 350
+    }
+  },
+  "saffroncreame": {
+    title: "Saffron Creame",
+    image: "./products/saffroncreame.png",
+   // sku: "DFH026",
+    description: "Saffron Cream, enriched with pure saffron extracts, brightens skin, reduces pigmentation, hydrates deeply, and enhances natural glow and radiance.",
+    prices: {
+      "Bottle": 350
+    }
+  },
+  "saffronface": {
+    title: "Saffron Face wash ",
+    image: "./products/safronfacewash.png",
+   // sku: "DFH026",
+    description: "Saffron Face Wash, infused with pure saffron, gently cleanses, brightens complexion, reduces dark spots, and promotes clear, glowing skin.",
+    prices: {
+      "Bottle": 300
+    }
+  },
+  "saffronserum": {
+    title: "Saffron Serum ",
+    image: "./products/safronserum.png",
+   // sku: "DFH026",
+    description: "Saffron Serum, enriched with pure saffron and botanicals, deeply nourishes, fades dark spots, boosts radiance, and improves skin texture.",
+    prices: {
+      "Bottle": 400
+    }
+  },
+   "apricotoil": {
+    title: "Apricot Oil",
+    image: "./products/apricotoil.png",
+  //  sku: "DFH026",
+    description: "Apricot Oil, light and nourishing, rich in vitamins A and E, moisturizes skin, promotes glow, and strengthens hair naturally.",
+    prices: {
+      "Bottle": 375
+    }
+  },
+   "badamoil": {
+    title: "Badam Oil",
+    image: "./products/Badaamoil.png",
+  //  sku: "DFH026",
+    description: "Badam (Almond) Oil, rich in vitamin E and antioxidants, deeply nourishes skin and hair, promotes glow, strength, and overall wellness.",
+    prices: {
+      "Bottle": 375
+    }
+  },
+  "walnutoil": {
+    title: "Walnut Oil",
+    image: "./products/anjeer.jpg",
+   // sku: "DFH026",
+    description: "Walnut Oil, packed with omega-3 and antioxidants, nourishes skin, strengthens hair, boosts brain health, and promotes overall vitality.",
+    prices: {
+      "Bottle": 375
+    }
+  },
+  "bwalnut": {
+    title: "Basic Walnut",
+    image: "./products/bwalnut.png",
+   // sku: "DFH045",
+    description: "Premium Walnuts with Shell, naturally preserved for freshness, rich in omega-3, support brain health, heart wellness, and wholesome snacking.",
+    prices: {
+      "1Kg": 450
+    }
+  },
+  "walnut": {
+    title: "Basic Walnut",
+    image: "./products/walnut1.jpeg",
+   // sku: "DFH045",
+    description: "Premium Walnuts, brain-boosting superfood rich in omega-3 and antioxidants, support heart health, improve memory, and promote overall wellness",
+    prices: {
+      "100g": 130,
+      "500g": 625,
+      "1kg": 1350
+    }
+  },
+   "redchilly": {
+    title: "Red Chilli Powder",
+    image: "./products/chilly.png",
+   // sku: "DFH045",
+    description: "Red Chilli Powder, vibrant and spicy, adds bold flavor to dishes, boosts metabolism, aids digestion, and enhances culinary experience.",
+    prices: {
+      "box": 850
+    }
+  }
+};
+
 
     const queryParams = new URLSearchParams(window.location.search);
     const productId = queryParams.get("product");
