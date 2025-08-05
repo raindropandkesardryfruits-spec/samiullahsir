@@ -3,9 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Product : Raindrop Kesar And Dry Fruits</title>
-  <link rel="icon" type="image/png" href="logon.png">
-
+  <title>Product Details</title>
   <link rel="stylesheet" href="styles.css" />
   <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
   <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
@@ -179,14 +177,14 @@ select:focus {
                     </svg></a></li>
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
-            <!-- <li><a href="">Products</a></li> -->
+            <li><a href="">Products</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
         <ul>
             <li><a href=""><img class="samiullah-logo" src="./icons/logooo.png"></a></li>
             <li class="hideOnMobile"><a href="index.html">Home</a></li>
             <li class="hideOnMobile"><a href="about.html">About</a></li>
-            <!-- <li class="hideOnMobile"><a href="">Products</a></li> -->
+            <li class="hideOnMobile"><a href="">Products</a></li>
             <li class="hideOnMobile"><a href="contact.html">Contact</a></li>
             <li class="menu-button" onclick="showsidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg"
                         height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f">
@@ -264,7 +262,7 @@ select:focus {
   <footer class="main-footer">
   <div class="footer-container">
     <div class="footer-brand">
-      <h2>Raindrop Kesar And Dry Fruits</h2>
+      <h2>AetherFall</h2>
       <p>Premium dry fruits sourced from the heart of Kashmir.</p>
     </div>
 
@@ -273,7 +271,7 @@ select:focus {
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
-        <!-- <li><a href="product.html">Products</a></li> -->
+        <li><a href="product.html">Products</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </div>
@@ -314,10 +312,9 @@ select:focus {
     // sku: "DFH001",
     description: "Natural Himalayan garlic known for its medicinal properties.",
     prices: {
-      "150g": 145,
+      "150g": 150,
       "300g": 300,
-      "400g": 400,
-      "1Kg": 1450,
+      "400g": 400
     }
   },
   "mamra": {
@@ -393,8 +390,8 @@ select:focus {
     description: "Sweet green kishmish (raisins).",
     prices: {
       "100g": 55,
-      "200g": 110,
-      "500g": 275
+      "200g": 120,
+      "500g": 520
     }
   },
   "blackraisins": {
@@ -562,7 +559,7 @@ select:focus {
       "25g": 625
     }
   },
-  "shilajithard": {
+   "shilajithard": {
     title: "Shilajit",
     image: "./products/shilajithard.png",
     //sku: "DFH042",
@@ -571,16 +568,14 @@ select:focus {
       "25g": 1750
     }
   },
-  "Palangtod": {
-  title: "Shilajit Palang Tod",
-  image: "./products/shilajitpalang.png",
-  // sku: "DFH042",
-  description: "Shilajit Palang Tod is a powerful natural supplement that boosts stamina, enhances strength, supports vitality, improves energy levels, and promotes overall male wellness.",
-  prices: {
-    "10g": 850
-  }
-},
-
+   "Palangtod": {
+    title: "Shilajit Palang Tod",
+    image: "./products/shilajitpalang.png",
+    //sku: "DFH042",
+    description: "Shilajit Palang Tod, powerful natural supplement, boosts stamina, enhances strength, supports vitality, improves energy levels, and overall male wellness.",
+    prices: {
+      "10g": 850
+  },
   "saffron": {
     title: "Saffron",
     image: "./products/saffron.png",
@@ -614,7 +609,7 @@ select:focus {
    // sku: "DFH044",
     description: "Premium dried kiwis, naturally sweet and tangy, rich in fiber and vitamin C, perfect for snacking and boosting immunity.",
     prices: {
-      "per 1Kg": 900
+      "per bottle": 350
     }
   },
   "garlic": {
@@ -623,9 +618,9 @@ select:focus {
    // sku: "DFH044",
     description: "Himalayan garlic, known for medicinal benefits, boosts immunity, reduces cholesterol, fights infections, and supports heart and overall body health.",
     prices: {
-      "100g": 145,
+      "100g": 150,
       "200g": 300,
-      "1kg": 1450
+      "1kg": 1400
     }
   },
    "curvedmamra": {
@@ -759,7 +754,7 @@ image: "./products/panjeeri.png",
     // sku: "DFH026",
     description: "Mamra Almonds with Shell, naturally protected, rich in nutrients and healthy fats, ensure purity, longer shelf life, and authentic taste.",
     prices: {
-      "1Kg": 675
+      "1Kg": 600
     }
   },
     "levender": {
@@ -845,15 +840,6 @@ image: "./products/panjeeri.png",
       "1kg": 1350
     }
   },
-   "rosewater": {
-    title: "Rose Water",
-    image: "./products/rosewater.png",
-   // sku: "DFH045",
-    description: "Pure Rose Water, natural toner and hydrator, soothes skin, tightens pores, reduces redness, and refreshes with a calming floral aroma.",
-    prices: {
-      "Per Bottle": 290
-    }
-  },
    "aloverawash": {
     title: "Neem & Aloe Vera Body Wash",
     image: "./products/aloverawash.png",
@@ -872,7 +858,7 @@ image: "./products/panjeeri.png",
       "box": 850
     }
   }
-};
+}};
 
 
     const queryParams = new URLSearchParams(window.location.search);
