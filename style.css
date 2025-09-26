@@ -1132,3 +1132,25 @@ a{
   background-color: #f0f0f0;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer-link {
+  color: white;
+  text-decoration: none; /* removes underline */
+}
+
+.footer-link:hover {
+  text-decoration: underline; /* optional hover effect */
+}
